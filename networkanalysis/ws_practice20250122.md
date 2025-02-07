@@ -1,5 +1,3 @@
-### Practice 20250122
+# Practice 20250122
 ## 06FEB2025
-# By. Christopher P. Cordero
-# projects
-Repo of projects 
+### By. Christopher P. Cordero
