@@ -50,3 +50,8 @@ To practice with AI models I wanted to host AI locally. Due to hardware restrict
   - `docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main`
 - 
 ---
+
+
+## References 
+- Ollama (https://ollama.com/)
+- Open WebUI (https://github.com/open-webui/open-webui)
