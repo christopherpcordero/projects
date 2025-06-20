@@ -12,20 +12,8 @@ The environment includes:
 - IP configurations for secure remote access
 
 ## Architecture
-   +----------------+       +----------------+      +-----------------------+
-   |   Kali VM      |       |   SIEM VM      |      |   VulnHub VM(s)       |
-   | (Red Team)     |       | (Blue Team)    |      | (Target machines)     |
-   +----------------+       +----------------+      +-----------------------+
-           |                        |                          |
-+----------+----------+   +--------+---------+     +----------+----------+
-| Network Interface 1  |   | Network Interface 2 |   | Manual Config / Upload |
-+----------------------+   +---------------------+     +----------------------+
-           \                 /                                /
-         +------------------------ Virtual Network ------------------------+
-                                   |
-                              +----------+
-                              |  Subnet  |
-                              +----------+
+
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/c8f1c3ed-58bc-4924-81a5-3989c815cc34" />
 
 
 ## Key Components
