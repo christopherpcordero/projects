@@ -51,26 +51,3 @@ It uses a combination of:
 
 ---
 
-## 📈 Deployment Options
-
-- Run PowerShell scripts via:
-  - Azure Automation (Scheduled Runbooks)
-  - Local/Cloud-hosted task scheduler
-- Deploy KQL queries as:
-  - Sentinel Analytics Rules (scheduled or near-real-time)
-  - Workbooks or custom dashboards
-- Alerts can trigger emails, Teams/Slack webhooks, or tickets
-
----
-
-## 🧪 Future Improvements
-
-- Baseline-based drift detection for privileged role assignments
-- Automatic remediation or approval workflows for stale resources
-- Integration with GitHub Actions for secure DevOps pipelines
-- Workbook dashboard for executive-level summaries
-
----
-
-## 📂 Folder Structure
-
