@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storagesku": {
+            "type": "string",
+            "defaultValue": "standard_lrs",
+            "allowedValues": [
+                "standard_lrs",
+                "premium_lrs"
+            ],
+            "metadata": {
+                "description": "The SKU for the storage account."
+            }
+        },
+        "storagename": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 24,
+            "defaultValue": "hcsstorageaccount",
+            "metadata": {
+                "description": "The name of the storage account."
+            }
+        }
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [{
+        "name": "[parameters('storagename')]",
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2023-05-01",
+        "tags": {
+            "displayName": "storageaccount1"
+        },
+        "location": "[resourceGroup().location]",
+        "kind": "StorageV2",
+        "sku": {
+            "name": "[parameters('storagesku')]",
+            "tier": "Premium"
+        }
+    }],
+    "outputs": {}
+}
