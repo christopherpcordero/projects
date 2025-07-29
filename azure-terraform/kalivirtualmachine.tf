@@ -90,7 +90,7 @@ resource "azurerm_network_security_group" "nsg_kali" {
     source_port_range      = "*"
     destination_port_range = "22"
     #only allow SSH from a specific IP address
-    source_address_prefix      = "173.72.65.138"
+    source_address_prefix      = "x.x.x.x"
     destination_address_prefix = "*"
   }
 
