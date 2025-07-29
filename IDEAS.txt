@@ -1,5 +1,0 @@
-PROJECTS IDEAS
--password strength but with API via HaveIBeenPwned: COMPLETED
--terraform project: COMPLETED
--azure cli: COMPLETED
--AI 
